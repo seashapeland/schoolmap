@@ -1,0 +1,40 @@
+ // 定义一些默认的标记位置和标签
+//    struct Marker {
+//        QPointF position;
+//        QString label;
+//    };
+//
+//    Marker markers[] = {
+//            {QPointF(100, 100), "Library"},
+//            {QPointF(200, 150), "Main Building"},
+//            {QPointF(300, 200), "Dormitory"},
+//            {QPointF(400, 250), "Sports Field"},
+//            // 添加更多标记
+//    };
+
+    // 在地图上添加这些标记
+//    for (const Marker &marker : markers) {
+//        QGraphicsEllipseItem *markerItem = new QGraphicsEllipseItem(marker.position.x() - 5, marker.position.y() - 5, 10, 10);
+//        markerItem->setBrush(Qt::red);
+//        scene.addItem(markerItem);
+//
+//        QGraphicsTextItem *labelItem = new QGraphicsTextItem(marker.label);
+//        labelItem->setPos(marker.position);
+//        scene.addItem(labelItem);
+//    }
+
+    // 定义一条路径，由一系列点连接而成
+//    QPointF pathPoints[] = {
+//            QPointF(100, 100),  // 起点
+//            QPointF(150, 120),  // 中间点
+//            QPointF(200, 150),  // 中间点
+//            QPointF(250, 180),  // 中间点
+//            QPointF(300, 200)   // 终点
+//    };
+//
+//    // 在地图上绘制路径
+//    for (int i = 0; i < sizeof(pathPoints) / sizeof(pathPoints[0]) - 1; ++i) {
+//        QGraphicsLineItem *lineItem = new QGraphicsLineItem(QLineF(pathPoints[i], pathPoints[i + 1]));
+//        lineItem->setPen(QPen(Qt::blue, 2));  // 设置线条颜色和宽度
+//        scene.addItem(lineItem);
+//    }

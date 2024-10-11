@@ -1,0 +1,53 @@
+// 填充邻接矩阵
+    for (const auto& conn : connections) {
+        int i = conn.first - 1;
+        int j = conn.second - 1;
+        double weight = calculateWeight(mappoints[i], mappoints[j]);
+        adjacencyMatrix[i][j] = weight;
+        adjacencyMatrix[j][i] = weight;  // 因为是无向图，所以对称
+    }
+
+
+
+    // 输出邻接矩阵
+    std::cout << "Adjacency Matrix:" << std::endl;
+    for (int i = 0; i < len; ++i) {
+        for (int j = 0; j < len; ++j) {
+            if (adjacencyMatrix[i][j] == std::numeric_limits<double>::infinity()) {
+                std::cout << "INF\t";
+            } else {
+                std::cout << adjacencyMatrix[i][j] << "\t";
+            }
+        }
+        std::cout << std::endl;
+    }
+
+    // 初始化距离矩阵和路径矩阵
+//    std::vector<std::vector<double>> dist;
+//    std::vector<std::vector<int>> next;
+
+    // 运行Floyd-Warshall算法
+//    floydWarshall(adjacencyMatrix, dist, next);
+
+
+
+    // 计算给定两点之间的最短路径
+    int start = 0;
+    int end = 33;
+//    std::vector<int> shortestPath = dijkstra(adjacencyMatrix, start, end);
+//    std::vector<int> shortestPath = constructPath(start, end, next);
+    std::vector<int> shortestPath = aStar(adjacencyMatrix, std::vector<MapPoint>(mappoints, mappoints + len), start, end);
+
+
+    // 输出最短路径
+    std::cout << "Shortest path from " << start << " to " << end << ": ";
+    for (int node : shortestPath) {
+        std::cout << node << " ";
+    }
+    std::cout << std::endl;
+
+    for (int i = 0; i < shortestPath.size() - 1; i++) {
+        QGraphicsLineItem *lineItem = new QGraphicsLineItem(QLineF(mappoints[shortestPath[i]].position, mappoints[shortestPath[i + 1]].position));
+        lineItem->setPen(QPen(Qt::blue, 2));  // 设置线条颜色和宽度
+        scene.addItem(lineItem);
+    }

@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>picture/WangZiLou.jpg</file>
+        <file>picture/CAULibrary.jpg</file>
+        <file>picture/CAUThirdBuilding.jpg</file>
+        <file>picture/CAUSecondBuilding.jpg</file>
+        <file>picture/EngineeringCollege.jpg</file>
+        <file>picture/HydraulicCivilEngineeringCollege.jpg</file>
+        <file>picture/ElectricalEngineeringCollege.jpg</file>
+        <file>picture/CAUFirstBuilding.jpg</file>
+        <file>picture/CAUGymnasium.jpg</file>
+        <file>picture/CAUStadium.jpg</file>
+        <file>picture/CAUShower.jpg</file>
+        <file>picture/EastGateTakeawayCabinet.jpg</file>
+        <file>picture/EastGateParcelLocker.jpg</file>
+        <file>picture/InternationalCollege.jpg</file>
+        <file>picture/BasketballCourt.jpg</file>
+        <file>picture/PrincessBuilding.jpg</file>
+        <file>picture/HumanitiesDevelopmentCollege.jpg</file>
+        <file>picture/CommercialStreet.jpg</file>
+        <file>picture/GraduateBuilding.jpg</file>
+        <file>picture/ScienceCollege.jpg</file>
+        <file>picture/EconomicsManagementCollege.jpg</file>
+        <file>picture/CAUHospitall.jpg</file>
+        <file>picture/NetworkCenter.jpg</file>
+        <file>picture/MaJinMingBuilding.jpg</file>
+        <file>picture/SouthEastGate.jpg</file>
+        <file>picture/NorthGate.jpg</file>
+        <file>picture/WestGate.jpg</file>
+        <file>picture/CAUmap.png</file>
+    </qresource>
+</RCC>
